@@ -19,7 +19,3 @@ def score_mape(y_pred, y_true, as_days=False):
     	print(y_true)
     mape = np.mean(np.abs((y_true - y_pred) / y_true)) * 100
     return mape
-
-y_true = np.array([1,2,3,4,5,1,2,3,4,5])
-y_pred = np.array([2,2,3,4,5,1,2,3,4,5])
-print(score_mape(y_pred, y_true, as_days=True))
