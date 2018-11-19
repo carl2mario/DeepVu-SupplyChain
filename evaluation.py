@@ -15,7 +15,5 @@ def score_mape(y_pred, y_true, as_days=False):
     		for i in range(0, len(y_pred), 5)])
     	y_true = np.array([np.mean(y_true[i:i+5]) 
     		for i in range(0, len(y_true), 5)])
-    	print(y_pred)
-    	print(y_true)
     mape = np.mean(np.abs((y_true - y_pred) / y_true)) * 100
     return mape
