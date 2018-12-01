@@ -1,7 +1,7 @@
 import numpy as np
 
 def score_mape(y_pred, y_true, as_days=False):
-    """Returns the Mean Absolute Error Percentage 
+    """Return the Mean Absolute Error Percentage 
     for the 10 weeks to predict
 
     input:
